@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
            steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:kumravib/JavaAPPDockerized.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/kumravib/JavaAPPDockerized.git']])
             } 
         }
         
