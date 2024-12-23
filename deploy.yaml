@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: 711387110373.dkr.ecr.us-east-2.amazonaws.com/ravi
+        image: 711387110373.dkr.ecr.us-east-2.amazonaws.com/ravi:latest
       imagePullSecrets:
         - name: ecr-registry
