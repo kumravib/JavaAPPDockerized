@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'
+        maven 'maven'
         // Ensure 'sonar' tool is installed globally in Jenkins
         // This should match the name configured in Global Tool Configuration
         // and should point to the location of the SonarQube Scanner installation
