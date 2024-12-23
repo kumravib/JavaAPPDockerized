@@ -105,7 +105,7 @@ pipeline {
                         git commit -m "Update image in deploy.yaml"
                         
                         # Push the changes back to the master branch (or a feature branch if needed)
-                        git push https://kumravib:ghp@github.com/kumravib/JavaAPPDockerized.git HEAD:master
+                        git push https://kumravib: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@github.com/kumravib/JavaAPPDockerized.git HEAD:master
                         # git push https://kumravib:ghp_CpX9u3Ik78dPf@github.com/kumravib/JavaAPPDockerized.git HEAD:master
                 '''
                  }
