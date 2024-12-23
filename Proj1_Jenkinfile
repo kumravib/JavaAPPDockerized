@@ -12,7 +12,7 @@ pipeline {
     environment {
         SONAR_HOST_URL = 'http://35.175.173.180:9000/' // Update with your SonarQube server URL
         SONAR_LOGIN = credentials('sonar-token') // Credentials ID for SonarQube access token
-        ECR_REGISTRY = "711387110373.dkr.ecr.us-east-2.amazonaws.com/ravi"
+        ECR_REGISTRY = "711387110373.dkr.ecr.us-east-1.amazonaws.com/ravi"
         // Set the name of your Docker image
         dockerImageTag = "${env.BUILD_NUMBER}"
     }
@@ -105,7 +105,7 @@ pipeline {
                         git commit -m "Update image in deploy.yaml"
                         
                         # Push the changes back to the master branch (or a feature branch if needed)
-                        git push https://kumravib:ghp_CpX9u3Ik78dPf@github.com/kumravib/JavaAPPDockerized.git HEAD:master
+                        git push https://kumravib:ghp@github.com/kumravib/JavaAPPDockerized.git HEAD:master
                         # git push https://kumravib:ghp_CpX9u3Ik78dPf@github.com/kumravib/JavaAPPDockerized.git HEAD:master
                 '''
                  }
